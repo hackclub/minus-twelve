@@ -6,28 +6,28 @@
 }
 
 html {
-  scrollbar-color:#c8c8c8 #dedede;
-  scrollbar-width:thin;
-  background-color:black;
   height:100%;
+  background-color:black;
+  scrollbar-color:#c8c8c8 #dedede;
+  scrollbar-width:thin
 }
 
 body {
   background:black;
   background:linear-gradient(60deg, black 0%, #262d57 100%);
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji", sans-serif;
-  line-height:1.4;
+  line-height:1.6;
   color:#f1f1f1
 }
 
-h2, p {
-  margin-bottom:16px;
+h2, p, ul {
+  margin-bottom:16px
 }
 
 h2 {
-  font-size:28px;
   background:#edabed;
   background: linear-gradient(to bottom, rgb(255, 127, 255), #4554b5);
+  font-size:28px;
   filter: drop-shadow(0px 4px 3px #354582);
   -webkit-background-clip:text;
   -webkit-text-fill-color:transparent
@@ -38,13 +38,21 @@ h4 {
 }
 
 a {
-  border-bottom:2px solid rgb(192, 96, 192);
+  border-bottom:2px solid rgb(192, 96, 192)
 }
 
 a:hover {
   background:#edabed;
   -webkit-background-clip:text;
-  -webkit-text-fill-color:transparent;
+  -webkit-text-fill-color:transparent
+}
+
+b, i {
+  color:#e3b8e3
+}
+
+li {
+  margin-left:2rem
 }
 
 #flag {
@@ -56,11 +64,11 @@ a:hover {
 
 #hero {
   padding-top:200px;
-  padding-bottom:50px;
+  padding-bottom:50px
 }
 
 #hero h1 {
-  display:inline-block;
+  display:inline-block
 }
 
 h2, #ten_to_the, #minus, #twelve {
@@ -78,7 +86,7 @@ h2, #ten_to_the, #minus, #twelve {
 }
 
 h2, #twelve, #we_ship {
-  font-style:italic;
+  font-style:italic
 }
 
 #ten_to_the {
@@ -116,52 +124,67 @@ h2, #twelve, #we_ship {
 a, #we_ship {
   background:#edabed;
   background: linear-gradient(to bottom, rgb(255, 127, 255) 0%, #4554b5 140%);
-  -webkit-background-clip:text;
-  -webkit-text-fill-color:transparent;
   font-weight:600;
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent
 }
 
 #arrow_container {
-  padding:20px 0;
+  padding:20px 0
 }
 
 #arrow {
-  width:48px;
-  height:96px;
   animation:arrow 1.5s cubic-bezier(0.65, 0, 0.35, 1) infinite;
+  width:48px;
+  height:96px
 }
 
 #footer {
-  color:#f1f1f1;
-  font-weight:300;
   margin-bottom:50px;
+  font-weight:300;
+  color:#f1f1f1
 }
 
 #footer p {
-  margin-bottom:2px;
+  margin-bottom:2px
 }
 
 #hero, main, footer {
-  max-width:700px;
   margin:auto;
+  max-width:700px
 }
 
 .section, footer {
-  padding:20px 0;
+  padding:20px 0
 }
 
 .section {
   margin-bottom:50px;
-  border-image:linear-gradient(to right, #4554b5, #262d57) 1;
   border-width:4px;
   border-top-style:none;
-  border-left-style:none;
   border-right-style:none;
   border-bottom-style:solid;
+  border-left-style:none;
+  border-image:linear-gradient(to right, #4554b5, #262d57) 1
 }
 
 .muted {
-  color:#999;
+  color:#999
+}
+
+.disabled {
+  border-bottom:2px solid hsl(300, 0%, 56%);
+  background:hsl(300, 0%, 80%);
+  background: linear-gradient(to bottom, hsl(300, 0%, 75%) 0%, hsl(232, 0%, 49%) 140%);
+  cursor:not-allowed;
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent
+}
+
+.disabled:hover {
+  background:hsl(300, 0%, 80%);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent
 }
 
 @keyframes arrow {
