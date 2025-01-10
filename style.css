@@ -1,0 +1,174 @@
+* {
+  margin:0;
+  border:0;
+  box-sizing:border-box;
+  padding:0
+}
+
+html {
+  scrollbar-color:#c8c8c8 #dedede;
+  scrollbar-width:thin;
+  background-color:black;
+  height:100%;
+}
+
+body {
+  background:black;
+  background:linear-gradient(60deg, black 0%, #262d57 100%);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji", sans-serif;
+  line-height:1.4;
+  color:#f1f1f1
+}
+
+h2, p {
+  margin-bottom:16px;
+}
+
+h2 {
+  font-size:28px;
+  background:#edabed;
+  background: linear-gradient(to bottom, rgb(255, 127, 255), #4554b5);
+  filter: drop-shadow(0px 4px 3px #354582);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent
+}
+
+h4 {
+  padding-bottom:16px
+}
+
+a {
+  border-bottom:2px solid rgb(192, 96, 192);
+}
+
+a:hover {
+  background:#edabed;
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+#flag {
+  position:absolute;
+  top:0;
+  left:0;
+  width:180px
+}
+
+#hero {
+  padding-top:200px;
+  padding-bottom:50px;
+}
+
+#hero h1 {
+  display:inline-block;
+}
+
+h2, #ten_to_the, #minus, #twelve {
+  font-family:"Rubik"
+}
+
+#minus, #twelve {
+  position:relative;
+  font-size:72px
+}
+
+#minus, #you_ship {
+  font-weight:300;
+  color:#f1f1f1
+}
+
+h2, #twelve, #we_ship {
+  font-style:italic;
+}
+
+#ten_to_the {
+  position:absolute;
+  top:190px;
+  font-weight:400;
+  font-size:20px;
+  text-shadow:0px 2px 3px #555;
+  color:#505050
+}
+
+#minus {
+  left:-5px;
+  padding-top:200px;
+  text-shadow:0px 4px 3px #999
+}
+
+#twelve {
+  left:5px;
+  background:#edabed;
+  background: linear-gradient(to bottom, rgb(255, 127, 255), #4554b5);
+  filter: drop-shadow(0px 4px 3px #354582);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent
+}
+
+#twelve_gon {
+  position:relative;
+  top:-36px;
+  left:15px;
+  width:60px;
+  filter:drop-shadow(0px 4px 0px rgb(96, 48, 96))
+}
+
+a, #we_ship {
+  background:#edabed;
+  background: linear-gradient(to bottom, rgb(255, 127, 255) 0%, #4554b5 140%);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  font-weight:600;
+}
+
+#arrow_container {
+  padding:20px 0;
+}
+
+#arrow {
+  width:48px;
+  height:96px;
+  animation:arrow 1.5s cubic-bezier(0.65, 0, 0.35, 1) infinite;
+}
+
+#footer {
+  color:#f1f1f1;
+  font-weight:300;
+  margin-bottom:50px;
+}
+
+#footer p {
+  margin-bottom:2px;
+}
+
+#hero, main, footer {
+  max-width:700px;
+  margin:auto;
+}
+
+.section, footer {
+  padding:20px 0;
+}
+
+.section {
+  margin-bottom:50px;
+  border-image:linear-gradient(to right, #4554b5, #262d57) 1;
+  border-width:4px;
+  border-top-style:none;
+  border-left-style:none;
+  border-right-style:none;
+  border-bottom-style:solid;
+}
+
+.muted {
+  color:#999;
+}
+
+@keyframes arrow {
+  0%, 100% {
+    transform:translateY(0)
+  }
+  50% {
+    transform:translateY(10px)
+  }
+}

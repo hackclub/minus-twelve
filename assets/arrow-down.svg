@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down">
+  <defs>
+    <linearGradient id="linear" x1="0%" y1="0%" x2="0%" y2="140%">
+      <stop offset="0%" stop-color="#ff7fff"/>
+      <stop offset="140%" stop-color="#4554b5"/>
+    </linearGradient>
+  </defs>
+  <polyline points="5 12 12 19 12 5 12 19 19 12" stroke="url(#linear)" />
+</svg>
