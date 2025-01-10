@@ -94,8 +94,8 @@ h2, #twelve, #we_ship {
   top:190px;
   font-weight:400;
   font-size:20px;
-  text-shadow:0px 2px 3px #555;
-  color:#505050
+  text-shadow:0px 2px 3px #aaa;
+  color:#ccc
 }
 
 #minus {
