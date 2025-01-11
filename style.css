@@ -66,9 +66,19 @@ ol li {
   width:180px
 }
 
+#huddle {
+  padding:10px;
+  position:relative;
+  top:-50px;
+  border-image: linear-gradient(to right, #ff7fff, #4554b5) 1;
+  border-width: 4px;
+  border-style: solid;
+  font-size:18px;
+  width:400px;
+}
+
 #hero {
-  padding-top:200px;
-  padding-bottom:50px
+  padding-top:150px
 }
 
 #hero h1 {
@@ -95,7 +105,6 @@ h2, #twelve, #we_ship {
 
 #ten_to_the {
   position:absolute;
-  top:190px;
   font-weight:400;
   font-size:20px;
   text-shadow:0px 2px 3px #aaa;
@@ -104,7 +113,6 @@ h2, #twelve, #we_ship {
 
 #minus {
   left:-5px;
-  padding-top:200px;
   text-shadow:0px 4px 3px #999
 }
 
@@ -198,9 +206,6 @@ a, #we_ship {
 }
 
 @media screen and (max-width:768px) {
-  #ten_to_the {
-    top:180px
-  }
   #minus, #twelve {
     font-size:48px
   }
