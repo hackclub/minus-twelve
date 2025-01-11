@@ -61,7 +61,7 @@ ol li {
 
 #flag {
   position:absolute;
-  top:0;
+  top:10px;
   left:0;
   width:180px
 }
@@ -169,7 +169,7 @@ a, #we_ship {
 }
 
 .section {
-  margin-bottom:50px;
+  margin:0 10px 50px 10px;
   border-width:4px;
   border-top-style:none;
   border-right-style:none;
@@ -195,6 +195,18 @@ a, #we_ship {
   background:hsl(300, 0%, 80%);
   -webkit-background-clip:text;
   -webkit-text-fill-color:transparent
+}
+
+@media screen and (max-width:768px) {
+  #ten_to_the {
+    top:180px
+  }
+  #minus, #twelve {
+    font-size:48px
+  }
+  #twelve_gon {
+    width:40px
+  }
 }
 
 @keyframes arrow {
