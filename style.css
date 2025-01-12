@@ -69,12 +69,13 @@ ol li {
 #huddle {
   padding:10px;
   position:relative;
+  margin:0 10px 16px 10px;
   top:-50px;
   border-image: linear-gradient(to right, #ff7fff, #4554b5) 1;
   border-width: 4px;
   border-style: solid;
   font-size:18px;
-  width:400px;
+  max-width:400px;
 }
 
 #hero {
@@ -206,6 +207,9 @@ a, #we_ship {
 }
 
 @media screen and (max-width:768px) {
+  #huddle {
+    top:-30px
+  }
   #minus, #twelve {
     font-size:48px
   }
