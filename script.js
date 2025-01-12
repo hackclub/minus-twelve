@@ -33,35 +33,32 @@ function huddle_check() {
   let active_huddle_apac = huddles.find(v => now.getTime() > v.start_time_apac.getTime() && now.getTime() <= v.end_time_apac.getTime());
   let time_until_us_eu_huddle = closest_huddle_us_eu.start_time_us_eu.getTime() - now.getTime();
   let time_until_apac_huddle = closest_huddle_apac.start_time_apac.getTime() - now.getTime();
-  if (active_huddle_us_eu != undefined) {
-    e_huddle.innerHTML = `<a href="https://hackclub.slack.com/archives/C087S82MNFR" target="_blank">A huddle</a> is happening! (US/EU)`;
-  } else if (active_huddle_apac != undefined) {
-    e_huddle.innerHTML = `<a href="https://hackclub.slack.com/archives/C087S82MNFR" target="_blank">A huddle</a> is happening! (APAC)`;
-  }
-  else if (time_until_us_eu_huddle <= 7_200_000) {
-    let h = Math.floor(time_until_us_eu_huddle / 3_600_000);
-    let m = Math.floor(
-      (time_until_us_eu_huddle - (h * 3_600_000)) /
-      60_000
-    );
-    let s = Math.floor(
-      (time_until_us_eu_huddle - (h * 3_600_000) - (m * 60_000)) /
-      1000
-    );
-    e_huddle.innerHTML = `<a href="https://hackclub.slack.com/archives/C087S82MNFR" target="_blank">A huddle</a> is happening in <b>${h}:${m < 10 ? '0' : ''}${m}:${s < 10 ? '0' : ''}${s}!</b> (US/EU)`;
-  } else if (time_until_apac_huddle <= 7_200_000) {
-    let h = Math.floor(time_until_apac_huddle / 3_600_000);
-    let m = Math.floor(
-      (time_until_apac_huddle - (h * 3_600_000)) /
-      60_000
-    );
-    let s = Math.floor(
-      (time_until_apac_huddle - (h * 3_600_000) - (m * 60_000)) /
-      1000
-    );
-    e_huddle.innerHTML = `<a href="https://hackclub.slack.com/archives/C087S82MNFR" target="_blank">A huddle</a> is happening in <b>${h}:${m < 10 ? '0' : ''}${m}:${s < 10 ? '0' : ''}${s}!</b> (APAC)`;
+  // consolidate
+  let is_huddle_active = active_huddle_us_eu || active_huddle_apac;
+  let date_of_huddle = time_until_us_eu_huddle < time_until_apac_huddle
+    ? closest_huddle_us_eu.start_time_us_eu
+    : closest_huddle_apac.start_time_apac;
+  let time_until_huddle = time_until_us_eu_huddle < time_until_apac_huddle
+    ? time_until_us_eu_huddle
+    : time_until_apac_huddle;
+  if (is_huddle_active) {
+    e_huddle.innerHTML = `<a href="https://hackclub.slack.com/archives/C087S82MNFR" target="_blank">A huddle is happening!</a>`;
   } else {
-    e_huddle.innerHTML = 'No active huddles.';
+    let h = Math.floor(time_until_huddle / 3_600_000);
+    let m = Math.floor((time_until_huddle - (h * 3_600_000)) / 60_000);
+    // let s = Math.floor((time_until_huddle - (h * 3_600_000) - (m * 60_000)) / 1000);
+    let time_text = h > 0 ? `${h + 1} hours`
+      : m > 0 ? `${m + 1} minutes`
+      : 'less than 1 minute';
+    let time_text_long_half = date_of_huddle.getHours() < 12 ? 'AM' : 'PM';
+    let time_text_long_hours = date_of_huddle.getHours() == 0 || date_of_huddle.getHours() == 12 ? '12'
+      : date_of_huddle.getHours() < 12 ? `${date_of_huddle.getHours()}`
+      : `${date_of_huddle.getHours() - 12}`;
+    let time_text_long_minutes = date_of_huddle.getMinutes() < 10
+      ? `0${date_of_huddle.getMinutes()}`
+      : `${date_of_huddle.getMinutes()}`;
+    let time_text_long = `January ${date_of_huddle.getDate()}, 2025, ${time_text_long_hours}:${time_text_long_minutes}${time_text_long_half}`;
+    e_huddle.innerHTML = `Next huddle <span class="tooltip" title="${time_text_long}">in ${time_text}</span>!`;
   }
 }
 
@@ -75,4 +72,5 @@ function huddle_check() {
 //   huddle(6)
 // ];
 
-// setInterval(huddle_check, 1000);
+// huddle_check();
+// setInterval(huddle_check, 10000);

@@ -206,6 +206,13 @@ a, #we_ship {
   -webkit-text-fill-color:transparent
 }
 
+.tooltip {
+  border-bottom:2px solid rgb(192, 96, 192);
+  border-style:dotted;
+  font-weight:600;
+  color:#e3b8e3
+}
+
 @media screen and (max-width:768px) {
   #huddle {
     top:-30px
