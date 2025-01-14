@@ -21,7 +21,7 @@ body {
   min-height:100%
 }
 
-h2, p, ul {
+h2, p, ul, #gallery_container img {
   margin-bottom:16px
 }
 
@@ -152,6 +152,19 @@ a, #we_ship, #n_submissions {
   animation:arrow 1.5s cubic-bezier(0.65, 0, 0.35, 1) infinite;
   width:48px;
   height:96px
+}
+
+#gallery_container h2 {
+  margin-bottom:0
+}
+
+#gallery_container img {
+  width:300px;
+  height:auto;
+  border-image:linear-gradient(to right, #ff7fff, #4554b5) 1;
+  border-width:4px;
+  border-style:solid;
+  padding:2px;
 }
 
 #footer {

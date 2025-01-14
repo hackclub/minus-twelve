@@ -7,6 +7,16 @@ async function get_json(url) {
   return json;
 }
 
+/**
+ * Append a submission to the gallery.
+ * @param {object} submission
+ * @param {string} submission.name
+ * @param {string} submission.author
+ * @param {string} submission.description
+ * @param {string} submission.repo_link
+ * @param {string} submission.package_link
+ * @param {string} submission.screenshot
+ */
 function append_submission(submission) {
   console.log(submission);
   let e_section = document.createElement('div');
@@ -14,13 +24,19 @@ function append_submission(submission) {
   let e_name = document.createElement('h2');
   e_name.innerHTML = submission.name;
   let e_links = document.createElement('p');
-  e_links.innerHTML = `<a href="${submission.repo_link}" target="_blank">Repository</a> &middot; <a href="${submission.package_link}" target="_blank">Package</a>`
+  e_links.innerHTML = `<a href="${submission.repo_link}" target="_blank">Repository</a> &middot; <a href="${submission.package_link}" target="_blank">Package</a>`;
+  let e_screenshot = document.createElement('img');
+  e_screenshot.src = submission.screenshot;
+  let e_author = document.createElement('p');
+  e_author.innerHTML = `<b>${submission.author}</b> had this to say about <i>${submission.name}</i>:`
   let e_description = document.createElement('blockquote');
   e_description.innerHTML = submission.description;
   e_section.appendChild(e_name);
   e_section.appendChild(e_links);
+  e_section.appendChild(e_screenshot);
+  e_section.appendChild(e_author);
   e_section.appendChild(e_description);
-  document.getElementById('main').appendChild(e_section);
+  document.getElementById('gallery_container').appendChild(e_section);
 }
 
 get_json('./submissions.json').then(json => {
