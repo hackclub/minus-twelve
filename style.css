@@ -60,6 +60,10 @@ ol li {
   padding-bottom:16px
 }
 
+ol li::marker {
+  color:#edabed
+}
+
 blockquote {
   border-left:4px solid #edabed;
   padding-left:1.5rem;
