@@ -10,7 +10,7 @@ function huddle(iteration) {
 }
 
 function huddle_start(region, iteration) {
-  let region_offset = region == "us_eu" ? 2 * 3_600_000 : 13 * 3_600_000;
+  let region_offset = region == "us_eu" ? 2 * 3_600_000 : 12 * 3_600_000;
   return new Date(
     event_start_time.getTime() +
     (2 * 86_400_000 * iteration) +
