@@ -121,6 +121,7 @@ h2, #twelve, #we_ship, #gallery, #n_submissions {
 }
 
 #twelve, #gallery {
+  left:5px;
   background:#edabed;
   background: linear-gradient(to bottom, rgb(255, 127, 255), #4554b5);
   filter: drop-shadow(0px 4px 3px #354582);
@@ -128,11 +129,7 @@ h2, #twelve, #we_ship, #gallery, #n_submissions {
   -webkit-text-fill-color:transparent
 }
 
-#twelve {
-  left:5px;
-}
-
-#twelve_gon {
+#twelve_gon, #ribbon {
   position:relative;
   top:-36px;
   left:15px;
@@ -251,7 +248,7 @@ a, #we_ship, #n_submissions {
   #minus, #twelve, #gallery {
     font-size:48px
   }
-  #twelve_gon {
+  #twelve_gon, #ribbon {
     width:40px
   }
 }
