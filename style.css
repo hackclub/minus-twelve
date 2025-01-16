@@ -232,6 +232,18 @@ a, #we_ship, #n_submissions {
   color:#e3b8e3
 }
 
+.tooltip:active:after, .tooltip:focus:after {
+  position:absolute;
+  padding:0 4px;
+  top:-20%;
+  right:17%;
+  font-size:12px;
+  font-weight:400;
+  content:attr(title);
+  background-color:rgba(0, 0, 0, 0.8);
+  color:#f1f1f1;
+}
+
 @media screen and (max-width:768px) {
   #huddle {
     top:-30px

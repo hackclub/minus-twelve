@@ -58,7 +58,7 @@ function huddle_check() {
       ? `0${date_of_huddle.getMinutes()}`
       : `${date_of_huddle.getMinutes()}`;
     let time_text_long = `January ${date_of_huddle.getDate()}, 2025, ${time_text_long_hours}:${time_text_long_minutes}${time_text_long_half}`;
-    e_huddle.innerHTML = `Next huddle <span class="tooltip" title="${time_text_long}">in ${time_text}</span>!`;
+    e_huddle.innerHTML = `Next huddle <span class="tooltip" title="${time_text_long}" tabindex="0">in ${time_text}</span>!`;
   }
 }
 
