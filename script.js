@@ -13,7 +13,7 @@ function huddle_start(region, iteration) {
   let region_offset = region == "us_eu" ? 2 * 3_600_000 : 12 * 3_600_000;
   return new Date(
     event_start_time.getTime() +
-    (2 * 86_400_000 * iteration) +
+    (86_400_000 * iteration) +
     region_offset
   );
 }
@@ -63,15 +63,7 @@ function huddle_check() {
 }
 
 let event_start_time = new Date(Date.UTC(2025, 0, 15, 15, 0, 0, 0));
-let huddles = [
-  huddle(0),
-  huddle(1),
-  huddle(2),
-  huddle(3),
-  huddle(4),
-  huddle(5),
-  huddle(6)
-];
+let huddles = Array(13).fill(0).map((x, i) => i).map(x => huddle(x));
 
 huddle_check();
 setInterval(huddle_check, 10000);
