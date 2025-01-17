@@ -106,12 +106,12 @@ h2, #minus, #twelve, #gallery {
   font-size:72px
 }
 
-#minus, #you_ship, #in_total {
+#minus, #you_ship, #in_total, #showing {
   font-weight:300;
   color:#f1f1f1
 }
 
-h2, #twelve, #we_ship, #gallery, #n_submissions {
+h2, #twelve, #we_ship, #gallery, #n_submissions, #n_submissions_2 {
   font-style:italic
 }
 
@@ -137,12 +137,29 @@ h2, #twelve, #we_ship, #gallery, #n_submissions {
   filter:drop-shadow(0px 4px 0px rgb(96, 48, 96))
 }
 
-a, #we_ship, #n_submissions {
+a, #we_ship, #n_submissions, #n_submissions_2 {
   background:#edabed;
   background: linear-gradient(to bottom, rgb(255, 127, 255) 0%, #4554b5 140%);
   font-weight:600;
   -webkit-background-clip:text;
   -webkit-text-fill-color:transparent
+}
+
+#search {
+  display:block;
+  margin-bottom:16px;
+  background-color:#111;
+  font-size:inherit;
+  padding:4px 8px;
+  color:#f1f1f1;
+  border:2px solid rgb(160, 80, 160);
+}
+
+#search:focus {
+  outline:none;
+  border-image:linear-gradient(to right, #ff7fff, #4554b5) 1;
+  border-width:2px;
+  border-style:solid;
 }
 
 #arrow_container {
@@ -220,6 +237,10 @@ a, #we_ship, #n_submissions {
   background:hsl(300, 0%, 80%);
   -webkit-background-clip:text;
   -webkit-text-fill-color:transparent
+}
+
+.hidden {
+  display:none;
 }
 
 .tooltip {

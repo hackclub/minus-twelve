@@ -42,7 +42,35 @@ function append_submission(submission) {
 get_json('./submissions.json').then(json => {
   const submissions = json.submissions;
   document.getElementById('n_submissions').innerHTML = `${submissions.length} submissions`;
+  document.getElementById('n_submissions_2').innerHTML = `${submissions.length} submissions`;
   for (let i = 0; i < submissions.length; i++) {
     append_submission(submissions[i]);
   }
-})
+});
+
+document.getElementById('search').oninput = function() {
+  const sections = Array.from(document.querySelectorAll('.section'));
+  document.getElementById('n_submissions_2').innerHTML = `${sections.length} submissions`;
+  for (const section of sections) {
+    section.classList.remove('hidden');
+  }
+  let v = document.getElementById('search').value;
+  if (v === '') {
+    return;
+  }
+  const hidden = sections.filter(section => {
+    const [e_name, e_links, e_screenshot, e_author, e_description] = Array.from(section.childNodes);
+    const name = e_name.innerHTML;
+    const author = e_author.childNodes[0].innerHTML;
+    const description = e_description.innerHTML;
+    if (name.includes(v) || author.includes(v) || description.includes(v)) {
+      return false;
+    }
+    return true;
+  });
+  const n = sections.length - hidden.length;
+  document.getElementById('n_submissions_2').innerHTML = `${n} submissions`;
+  for (const section of hidden) {
+    section.classList.add('hidden');
+  }
+}
