@@ -1,3 +1,36 @@
 {
-  "submissions": []
+  "submissions": [
+    {
+      "name": "puppeteer-http-server",
+      "author": "Neon",
+      "description": "This will auto attach a page to each puppeteer request via expressjs. can be useful with express API's",
+      "repo_link": "https://github.com/NeonGamerBot-QK/puppeteer-http-server",
+      "package_link": "https://www.npmjs.com/package/puppeteer-http-server",
+      "screenshot": "screenshots/puppeteer-http-server.png"
+    },
+    {
+      "name": "Book-Scraper",
+      "author": "Aarav J",
+      "description": "Book-Scraper is a tool that allows you to capture and save screenshots of online books, even if they are not directly downloadable. The tool automates the process of taking screenshots of each page, saving them as image files, and then combines these images into a single PDF. It is useful for converting web-based books into a portable format for offline reading or archiving.",
+      "repo_link": "https://github.com/The-UnknownHacker/Book-Scraper",
+      "package_link": "https://www.npmjs.com/package/book-scraper",
+      "screenshot": "screenshots/book-scraper.png"
+    },
+    {
+      "name": "swatch_time",
+      "author": "Neko",
+      "description": "swatch_time is a JS library to convert ISO-8601 timestamps to Swatch .beat Internet Time, an attempt by Swatch to create a decimalized time system that gained a bit of popularity in the 2000s with it's usage in places like Phantasy Star Online.",
+      "repo_link": "https://github.com/Neko-22/swatch_time_js",
+      "package_link": "https://www.npmjs.com/package/swatch_time",
+      "screenshot": "screenshots/swatch-time.png"
+    },
+    {
+      "name": "former",
+      "author": "DJ_Laser",
+      "description": "Its a generic form tool aimed at cli but gereric enough for any purpose",
+      "repo_link": "https://github.com/DJ-Laser/former",
+      "package_link": "https://jsr.io/@djlaser/former",
+      "screenshot": "screenshots/former.png"
+    }
+  ]
 }
