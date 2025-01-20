@@ -31,6 +31,62 @@
       "repo_link": "https://github.com/DJ-Laser/former",
       "package_link": "https://jsr.io/@djlaser/former",
       "screenshot": "screenshots/former.png"
+    },
+    {
+      "name": "console.style",
+      "author": "Anicetus",
+      "description": "console.style is a simple and easy tool for developers to use to color and style their console.log outputs! With easy bolding, italicizing, coloring, and more, this versatile and simple NPM package will make console logging fun and easy.",
+      "repo_link": "https://github.com/invictus-anic3tus/console.style",
+      "package_link": "https://www.npmjs.com/package/@anicetus/console-style",
+      "screenshot": "screenshots/console-style.png"
+    },
+    {
+      "name": "envario",
+      "author": "frèrot",
+      "description": "envario is tool that helps to Validate and load .env files with type-safe checks.",
+      "repo_link": "https://github.com/iamfrerot/envario",
+      "package_link": "https://www.npmjs.com/package/envario",
+      "screenshot": "screenshots/envario.png"
+    },
+    {
+      "name": "tpov_extract_visu",
+      "author": "Cyril Li",
+      "description": "tpov_extract_visu is a tool to visualize JSON files created by tpov_extract (part of the tpov project) on a map. Individual objects representing stops and route shape can be viewed by clicking them on the map.",
+      "repo_link": "https://github.com/CyrilSLi/tpov_extract_visu",
+      "package_link": "https://www.npmjs.com/package/tpov_extract_visu",
+      "screenshot": "screenshots/tpov-extract-visu.png"
+    },
+    {
+      "name": "betamax-timestamp",
+      "author": "TwigCoder",
+      "description": "This library converts modern digital timestamps (HH:MM:SS) to Betamax counter numbers and vice versa. It is perfect for archivists, museums, and any tech enthusiasts working with digitized Betamax tapes.",
+      "repo_link": "https://github.com/TwigCoder/betamax-timestamp",
+      "package_link": "https://www.npmjs.com/package/betamax-timestamp",
+      "screenshot": "screenshots/betamax-timestamp.png"
+    },
+    {
+      "name": "proconsole",
+      "author": "giacomo",
+      "description": "ProConsole is an npm library for creating colored messages in the console. It allows you to define dynamic methods to print messages with specific colors, improving the readability and organization of logs.",
+      "repo_link": "https://github.com/Arrow-07/proconsole",
+      "package_link": "https://www.npmjs.com/package/proconsole",
+      "screenshot": "screenshots/proconsole.png"
+    },
+    {
+      "name": "tsrt",
+      "author": "Monke",
+      "description": "tsrt is a CLI tool coded in Typescript that allows users to easily sort files or manual input via the terminal based on both lexicographical and numerical order. No fuzz, no weird settings, no configuration. For more advanced users, an optional option for a specific algorithm is able to be specified. The selection of 7 algorithms can also be benchmarked with variable test sizes using -b.",
+      "repo_link": "https://github.com/TetieWasTaken/tsrt",
+      "package_link": "https://www.npmjs.com/package/tsrt",
+      "screenshot": "screenshots/tsrt.jpg"
+    },
+    {
+      "name": "Get Start Hackin'",
+      "author": "Avinash",
+      "description": "This is a tool which helps the developer generate boilerplate code for when they start a new project. Think of it as create-next-app but for multiple type of projects from python to native HTML,CSS AND JS. Its a one step solution for that. Also I have added some commands so that even the frameworks like nextjs and react they are better!",
+      "repo_link": "https://github.com/JigmetAvinash/get-start-hackin",
+      "package_link": "https://www.npmjs.com/package/get-start-hackin",
+      "screenshot": "screenshots/get-start-hackin.png"
     }
   ]
 }
