@@ -1,9 +1,17 @@
+const HIGH_PRIORITY_TAGS = ['javascript', 'typescript', 'cli'];
+
 let submissions = [];
 let tags = [];
-// let active_tags = [];
 
-function unique(v, i, a) {
-  return a.indexOf(v) === i;
+function unique(v, i, r) {
+  return r.indexOf(v) === i;
+}
+
+function partition(r, cb) {
+  let a = [];
+  let b = [];
+  r.forEach((v, i, r2) => (cb(v, i, r2) ? a : b).push(v));
+  return [a, b];
 }
 
 async function get_json(url) {
@@ -39,7 +47,7 @@ function append_submission(submission) {
   e_name.setAttribute('id', submission.name);
   // tags
   let e_tags = document.createElement('div');
-  for (const tag of submission.tags) {
+  for (const tag of sort_tags(submission.tags)) {
     let e_tag = document.createElement('p');
     e_tag.classList.add('tag');
     e_tag.innerHTML = tag;
@@ -156,9 +164,24 @@ function filter_submissions() {
   }
 }
 
+/**
+ * Sort a list of tags.
+ * @param {string[]} unsorted
+ * @returns {string[]}
+ */
+function sort_tags(unsorted) {
+  // partition the tags into high priority and low priority
+  let [high_priority, low_priority] = partition(unsorted, v => HIGH_PRIORITY_TAGS.includes(v));
+  // maintain the desired order of high priority tags by filtering the constant instead of the partition
+  high_priority = HIGH_PRIORITY_TAGS.filter(tag => high_priority.includes(tag));
+  // sort the low priority tags alphabetically
+  low_priority.sort();
+  return [...high_priority, ...low_priority];
+}
+
 get_json('./submissions.json').then(json => {
   submissions = json.submissions;
-  tags = submissions.flatMap(submission => submission.tags).filter(unique);
+  tags = sort_tags(submissions.flatMap(submission => submission.tags).filter(unique));
   // document.getElementById('n_submissions').innerHTML = `${submissions.length} submissions`;
   document.getElementById('n_submissions_2').innerHTML = `${submissions.length} of ${submissions.length} submissions`;
   for (let i = 0; i < submissions.length; i++) {
