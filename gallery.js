@@ -73,7 +73,7 @@ document.getElementById('search').oninput = function() {
     return;
   }
   const hidden = sections.filter(section => {
-    const [e_name, e_links, e_screenshot, e_author, e_description] = Array.from(section.childNodes);
+    const [e_permalink, e_name, e_links, e_screenshot, e_author, e_description] = Array.from(section.childNodes);
     const name = e_name.innerHTML;
     const author = e_author.childNodes[0].innerHTML;
     const description = e_description.innerHTML;
