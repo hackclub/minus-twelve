@@ -65,6 +65,14 @@
       "screenshot": "screenshots/betamax-timestamp.png"
     },
     {
+      "name": "memo-wrap",
+      "author": "Podter",
+      "description": "Cache the result of function calls. Simply wrap your async function with memo and the return result will be cached. Inspired from Next.js's unstable_cache function and unstorage's modular design.",
+      "repo_link": "https://github.com/Podter/memo-wrap",
+      "package_link": "https://www.npmjs.com/package/memo-wrap",
+      "screenshot": "screenshots/memo-wrap.png"
+    },
+    {
       "name": "proconsole",
       "author": "giacomo",
       "description": "ProConsole is an npm library for creating colored messages in the console. It allows you to define dynamic methods to print messages with specific colors, improving the readability and organization of logs.",
@@ -87,6 +95,30 @@
       "repo_link": "https://github.com/JigmetAvinash/get-start-hackin",
       "package_link": "https://www.npmjs.com/package/get-start-hackin",
       "screenshot": "screenshots/get-start-hackin.png"
+    },
+    {
+      "name": "createsudokupuzzle",
+      "author": "dave9123",
+      "description": "Generate and solve sudoku puzzles easily!",
+      "repo_link": "https://github.com/dave9123/createsudokupuzzle",
+      "package_link": "https://www.npmjs.com/package/createsudokupuzzle",
+      "screenshot": "screenshots/create-sudoku-puzzle.png"
+    },
+    {
+      "name": "misobox",
+      "author": "spacefall",
+      "description": "misobox is a CLI tool that captures and saves error messages or notes added manually from your projects for later review.",
+      "repo_link": "https://github.com/spacefall/misobox",
+      "package_link": "https://www.npmjs.com/package/misobox",
+      "screenshot": "screenshots/misobox.png"
+    },
+    {
+      "name": "plugdb",
+      "author": "samannoyb",
+      "description": "An effective yet mini and handy tool of a database system that allows to quickly save and store data and retrieve/modify it from a json file. Saves time, saves code.",
+      "repo_link": "https://github.com/SamannoyB/plugdb",
+      "package_link": "https://www.npmjs.com/package/@samannoyb/plug-db",
+      "screenshot": "screenshots/plug-db.png"
     }
   ]
 }
