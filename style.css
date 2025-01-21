@@ -172,7 +172,14 @@ a, #we_ship, #n_submissions, #n_submissions_2 {
   height:96px
 }
 
+.permalink {
+  display:inline-block;
+  margin-right:8px;
+  font-size:18px;
+}
+
 #gallery_container h2 {
+  display:inline-block;
   margin-bottom:0
 }
 
@@ -224,17 +231,20 @@ a, #we_ship, #n_submissions, #n_submissions_2 {
   color:#999
 }
 
-.disabled {
+.disabled, .permalink a {
   border-bottom:2px solid hsl(300, 0%, 56%);
   background:hsl(300, 0%, 80%);
   background: linear-gradient(to bottom, hsl(300, 0%, 75%) 0%, hsl(232, 0%, 49%) 140%);
-  cursor:not-allowed;
   -webkit-background-clip:text;
   -webkit-text-fill-color:transparent
 }
 
-.disabled:hover {
-  background:hsl(300, 0%, 80%);
+.disabled {
+  cursor:not-allowed;
+}
+
+.disabled:hover, .permalink a:hover {
+  background:hsl(300, 0%, 90%);
   -webkit-background-clip:text;
   -webkit-text-fill-color:transparent
 }
