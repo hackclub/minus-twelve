@@ -6,7 +6,9 @@
       "description": "This will auto attach a page to each puppeteer request via expressjs. can be useful with express API's",
       "repo_link": "https://github.com/NeonGamerBot-QK/puppeteer-http-server",
       "package_link": "https://www.npmjs.com/package/puppeteer-http-server",
-      "screenshot": "screenshots/puppeteer-http-server.png"
+      "screenshot": "screenshots/puppeteer-http-server.png",
+      "tags": ["javascript", "server"],
+      "hidden_tags": ["js"]
     },
     {
       "name": "Book-Scraper",
@@ -14,7 +16,9 @@
       "description": "Book-Scraper is a tool that allows you to capture and save screenshots of online books, even if they are not directly downloadable. The tool automates the process of taking screenshots of each page, saving them as image files, and then combines these images into a single PDF. It is useful for converting web-based books into a portable format for offline reading or archiving.",
       "repo_link": "https://github.com/The-UnknownHacker/Book-Scraper",
       "package_link": "https://www.npmjs.com/package/book-scraper",
-      "screenshot": "screenshots/book-scraper.png"
+      "screenshot": "screenshots/book-scraper.png",
+      "tags": ["javascript", "cli", "conversion", "automation"],
+      "hidden_tags": ["js"]
     },
     {
       "name": "swatch_time",
@@ -22,7 +26,9 @@
       "description": "swatch_time is a JS library to convert ISO-8601 timestamps to Swatch .beat Internet Time, an attempt by Swatch to create a decimalized time system that gained a bit of popularity in the 2000s with it's usage in places like Phantasy Star Online.",
       "repo_link": "https://github.com/Neko-22/swatch_time_js",
       "package_link": "https://www.npmjs.com/package/swatch_time",
-      "screenshot": "screenshots/swatch-time.png"
+      "screenshot": "screenshots/swatch-time.png",
+      "tags": ["javascript", "date", "conversion"],
+      "hidden_tags": ["js"]
     },
     {
       "name": "former",
@@ -30,7 +36,9 @@
       "description": "Its a generic form tool aimed at cli but gereric enough for any purpose",
       "repo_link": "https://github.com/DJ-Laser/former",
       "package_link": "https://jsr.io/@djlaser/former",
-      "screenshot": "screenshots/former.png"
+      "screenshot": "screenshots/former.png",
+      "tags": ["typescript", "user input"],
+      "hidden_tags": ["ts"]
     },
     {
       "name": "console.style",
@@ -38,7 +46,9 @@
       "description": "console.style is a simple and easy tool for developers to use to color and style their console.log outputs! With easy bolding, italicizing, coloring, and more, this versatile and simple NPM package will make console logging fun and easy.",
       "repo_link": "https://github.com/invictus-anic3tus/console.style",
       "package_link": "https://www.npmjs.com/package/@anicetus/console-style",
-      "screenshot": "screenshots/console-style.png"
+      "screenshot": "screenshots/console-style.png",
+      "tags": ["javascript", "logging"],
+      "hidden_tags": ["js"]
     },
     {
       "name": "envario",
@@ -46,7 +56,9 @@
       "description": "envario is tool that helps to Validate and load .env files with type-safe checks.",
       "repo_link": "https://github.com/iamfrerot/envario",
       "package_link": "https://www.npmjs.com/package/envario",
-      "screenshot": "screenshots/envario.png"
+      "screenshot": "screenshots/envario.png",
+      "tags": ["typescript", "cli", "validation"],
+      "hidden_tags": ["ts", "frerot"]
     },
     {
       "name": "tpov_extract_visu",
@@ -54,7 +66,9 @@
       "description": "tpov_extract_visu is a tool to visualize JSON files created by tpov_extract (part of the tpov project) on a map. Individual objects representing stops and route shape can be viewed by clicking them on the map.",
       "repo_link": "https://github.com/CyrilSLi/tpov_extract_visu",
       "package_link": "https://www.npmjs.com/package/tpov_extract_visu",
-      "screenshot": "screenshots/tpov-extract-visu.png"
+      "screenshot": "screenshots/tpov-extract-visu.png",
+      "tags": ["javascript", "data visualization", "travel"],
+      "hidden_tags": ["js"]
     },
     {
       "name": "betamax-timestamp",
@@ -62,7 +76,9 @@
       "description": "This library converts modern digital timestamps (HH:MM:SS) to Betamax counter numbers and vice versa. It is perfect for archivists, museums, and any tech enthusiasts working with digitized Betamax tapes.",
       "repo_link": "https://github.com/TwigCoder/betamax-timestamp",
       "package_link": "https://www.npmjs.com/package/betamax-timestamp",
-      "screenshot": "screenshots/betamax-timestamp.png"
+      "screenshot": "screenshots/betamax-timestamp.png",
+      "tags": ["typescript", "conversion"],
+      "hidden_tags": ["ts"]
     },
     {
       "name": "memo-wrap",
@@ -70,7 +86,9 @@
       "description": "Cache the result of function calls. Simply wrap your async function with memo and the return result will be cached. Inspired from Next.js's unstable_cache function and unstorage's modular design.",
       "repo_link": "https://github.com/Podter/memo-wrap",
       "package_link": "https://www.npmjs.com/package/memo-wrap",
-      "screenshot": "screenshots/memo-wrap.png"
+      "screenshot": "screenshots/memo-wrap.png",
+      "tags": ["typescript"],
+      "hidden_tags": ["ts"]
     },
     {
       "name": "proconsole",
@@ -78,7 +96,9 @@
       "description": "ProConsole is an npm library for creating colored messages in the console. It allows you to define dynamic methods to print messages with specific colors, improving the readability and organization of logs.",
       "repo_link": "https://github.com/Arrow-07/proconsole",
       "package_link": "https://www.npmjs.com/package/proconsole",
-      "screenshot": "screenshots/proconsole.png"
+      "screenshot": "screenshots/proconsole.png",
+      "tags": ["javascript", "logging"],
+      "hidden_tags": ["js"]
     },
     {
       "name": "tsrt",
@@ -86,7 +106,9 @@
       "description": "tsrt is a CLI tool coded in Typescript that allows users to easily sort files or manual input via the terminal based on both lexicographical and numerical order. No fuzz, no weird settings, no configuration. For more advanced users, an optional option for a specific algorithm is able to be specified. The selection of 7 algorithms can also be benchmarked with variable test sizes using -b.",
       "repo_link": "https://github.com/TetieWasTaken/tsrt",
       "package_link": "https://www.npmjs.com/package/tsrt",
-      "screenshot": "screenshots/tsrt.jpg"
+      "screenshot": "screenshots/tsrt.jpg",
+      "tags": ["typescript", "cli", "sorting"],
+      "hidden_tags": ["ts"]
     },
     {
       "name": "Get Start Hackin'",
@@ -94,7 +116,9 @@
       "description": "This is a tool which helps the developer generate boilerplate code for when they start a new project. Think of it as create-next-app but for multiple type of projects from python to native HTML,CSS AND JS. Its a one step solution for that. Also I have added some commands so that even the frameworks like nextjs and react they are better!",
       "repo_link": "https://github.com/JigmetAvinash/get-start-hackin",
       "package_link": "https://www.npmjs.com/package/get-start-hackin",
-      "screenshot": "screenshots/get-start-hackin.png"
+      "screenshot": "screenshots/get-start-hackin.png",
+      "tags": ["javascript", "cli"],
+      "hidden_tags": ["js"]
     },
     {
       "name": "createsudokupuzzle",
@@ -102,7 +126,9 @@
       "description": "Generate and solve sudoku puzzles easily!",
       "repo_link": "https://github.com/dave9123/createsudokupuzzle",
       "package_link": "https://www.npmjs.com/package/createsudokupuzzle",
-      "screenshot": "screenshots/create-sudoku-puzzle.png"
+      "screenshot": "screenshots/create-sudoku-puzzle.png",
+      "tags": ["typescript", "validation", "games"],
+      "hidden_tags": ["ts"]
     },
     {
       "name": "misobox",
@@ -110,7 +136,9 @@
       "description": "misobox is a CLI tool that captures and saves error messages or notes added manually from your projects for later review.",
       "repo_link": "https://github.com/spacefall/misobox",
       "package_link": "https://www.npmjs.com/package/misobox",
-      "screenshot": "screenshots/misobox.png"
+      "screenshot": "screenshots/misobox.png",
+      "tags": ["typescript", "cli"],
+      "hidden_tags": ["ts"]
     },
     {
       "name": "plugdb",
@@ -118,7 +146,9 @@
       "description": "An effective yet mini and handy tool of a database system that allows to quickly save and store data and retrieve/modify it from a json file. Saves time, saves code.",
       "repo_link": "https://github.com/SamannoyB/plugdb",
       "package_link": "https://www.npmjs.com/package/@samannoyb/plug-db",
-      "screenshot": "screenshots/plug-db.png"
+      "screenshot": "screenshots/plug-db.png",
+      "tags": ["javascript", "database"],
+      "hidden_tags": ["js"]
     }
   ]
 }

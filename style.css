@@ -175,12 +175,45 @@ a, #we_ship, #n_submissions, #n_submissions_2 {
 .permalink {
   display:inline-block;
   margin-right:8px;
+  margin-bottom:0;
   font-size:18px;
 }
 
 #gallery_container h2 {
   display:inline-block;
   margin-bottom:0
+}
+
+.tag {
+  display:inline-block;
+  margin-right:8px;
+  background-color:rgba(0, 0, 0, 0.8);
+  border-radius:12px;
+  padding:0 8px;
+  font-size:14px;
+  user-select:none;
+}
+
+.tag-active {
+  background-color:rgba(128, 64, 128, 0.8);
+  font-weight:600;
+  border:2px solid #edabed;
+}
+
+.tag:hover {
+  background-color:rgba(128, 64, 128, 0.8);
+}
+
+.tag-active:hover {
+  background-color:rgba(160, 80, 160, 0.8);
+}
+
+#hero .tag {
+  margin-bottom:8px;
+}
+
+#tags .tag:last-child {
+  margin-bottom:16px;
 }
 
 #gallery_container img {
