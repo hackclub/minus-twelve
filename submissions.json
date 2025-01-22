@@ -149,6 +149,66 @@
       "screenshot": "screenshots/plug-db.png",
       "tags": ["javascript", "database"],
       "hidden_tags": ["js"]
+    },
+    {
+      "name": "fahs",
+      "author": "Arti",
+      "description": "Fahs is a tool to inspect variables and log to console, as an alternative to a bland console.log",
+      "repo_link": "https://github.com/artifishvr/fahs",
+      "package_link": "https://www.npmjs.com/package/fahs",
+      "screenshot": "screenshots/fahs.png",
+      "tags": ["typescript", "logging"],
+      "hidden_tags": ["ts"]
+    },
+    {
+      "name": "Fen2board",
+      "author": "Souptik Samanta",
+      "description": "Uses FEN (Forsyth–Edwards Notation) strings. It allows me to input chess positions in FEN format, visualize them in a text-based board representation in the console, make moves using algebraic notation (e.g., 'd2d4'), and track game state including whose turn it is, castling rights, en passant possibilities, and move counters.",
+      "repo_link": "https://github.com/souptik-samanta/Fen2board",
+      "package_link": "https://www.npmjs.com/package/fen2board",
+      "screenshot": "screenshots/fen2board.png",
+      "tags": ["javascript", "games", "validation"],
+      "hidden_tags": ["js"]
+    },
+    {
+      "name": "password-checker",
+      "author": "Ethan",
+      "description": "It checks if the password fits the requirements (min and max length, num of numbers and num of special charecters).",
+      "repo_link": "https://github.com/not-a-ethan/password-checker",
+      "package_link": "https://www.npmjs.com/package/ethan-password-checker",
+      "screenshot": "screenshots/password-checker.png",
+      "tags": ["javascript", "validation"],
+      "hidden_tags": ["js"]
+    },
+    {
+      "name": "b2-uploader",
+      "author": "Deployor",
+      "description": "Turn any URL into cloud storage with a single command! The ultimate CLI toolkit that makes Backblaze B2 storage management a breeze - from instant URL uploads to encrypted batch processing, all from your terminal. Including an easy to use wizzard!",
+      "repo_link": "https://github.com/deployor/e2-cli",
+      "package_link": "https://www.npmjs.com/package/b2-uploader",
+      "screenshot": "screenshots/b2-uploader.png",
+      "tags": ["javascript", "cli"],
+      "hidden_tags": ["js"]
+    },
+    {
+      "name": "path-convert",
+      "author": "Hash-AK",
+      "description": "Path-Convert-JS is a simple tool that permit to easily transform path, from DOS to Unix-style, Unix to DOS-style, and DOS to DOS escaped",
+      "repo_link": "https://github.com/Hash-AK/path-convert",
+      "package_link": "https://www.npmjs.com/package/path-convert-js",
+      "screenshot": "screenshots/path-convert.png",
+      "tags": ["javascript", "cli", "conversion"],
+      "hidden_tags": ["js"]
+    },
+    {
+      "name": "cnrt",
+      "author": "Monke",
+      "description": "cnrt is a CLI for converting various units including length, light, mass, temperature, time, and volume such as kilometers to miles, pounds to grams, and more. And it's all written in TypeScript! You can find the package on npm.",
+      "repo_link": "https://github.com/TetieWasTaken/cnrt",
+      "package_link": "https://www.npmjs.com/package/cnrt",
+      "screenshot": "screenshots/cnrt.png",
+      "tags": ["typescript", "cli", "conversion"],
+      "hidden_tags": ["ts"]
     }
   ]
 }
