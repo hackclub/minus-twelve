@@ -31,8 +31,8 @@ function huddle_check() {
   let closest_huddle_apac = huddles.find(v => now.getTime() <= v.start_time_apac.getTime());
   let active_huddle_us_eu = huddles.find(v => now.getTime() > v.start_time_us_eu.getTime() && now.getTime() <= v.end_time_us_eu.getTime());
   let active_huddle_apac = huddles.find(v => now.getTime() > v.start_time_apac.getTime() && now.getTime() <= v.end_time_apac.getTime());
-  let time_until_us_eu_huddle = closest_huddle_us_eu.start_time_us_eu.getTime() - now.getTime();
-  let time_until_apac_huddle = closest_huddle_apac.start_time_apac.getTime() - now.getTime();
+  let time_until_us_eu_huddle = closest_huddle_us_eu !== undefined ? closest_huddle_us_eu.start_time_us_eu.getTime() - now.getTime() : undefined;
+  let time_until_apac_huddle = closest_huddle_apac !== undefined ? closest_huddle_apac.start_time_apac.getTime() - now.getTime() : undefined;
   // consolidate
   let is_huddle_active = active_huddle_us_eu || active_huddle_apac;
   let date_of_huddle = time_until_us_eu_huddle < time_until_apac_huddle
