@@ -209,6 +209,76 @@
       "screenshot": "screenshots/cnrt.png",
       "tags": ["typescript", "cli", "conversion"],
       "hidden_tags": ["ts"]
+    },
+    {
+      "name": "tace",
+      "author": "HydrogenMacro",
+      "description": "TACE allows you to create reusable components in the form of custom elements easily and directly in your HTML file.",
+      "repo_link": "https://github.com/HydrogenMacro/tace",
+      "package_link": "https://www.npmjs.com/package/@hydrogenmacro/tace",
+      "screenshot": "screenshots/tace.png",
+      "tags": ["javascript"],
+      "hidden_tags": ["js"]
+    },
+    {
+      "name": "atb-resistor-calculator",
+      "author": "Santorini",
+      "description": "atb-resistor-calculator is a tool that helps you find resistor values by just typing the color bands, or you can type the values to find out which color band resistor you need.",
+      "repo_link": "https://github.com/aaryavbehl/atb-resistor-calculator",
+      "package_link": "https://www.npmjs.com/package/atb-resistor-calculator",
+      "screenshot": "screenshots/atb-resistor-calculator.png",
+      "tags": ["javascript", "cli", "conversion"],
+      "hidden_tags": ["js"]
+    },
+    {
+      "name": "Nest-Mail",
+      "author": "Oliver",
+      "description": "Nest Mail is an NPM package that allows you to send simple emails through Hack Club's Nest mail server.",
+      "repo_link": "https://github.com/opott/Nest-Mail",
+      "package_link": "https://www.npmjs.com/package/nest-mail",
+      "screenshot": "screenshots/nest-mail.png",
+      "tags": ["javascript"],
+      "hidden_tags": ["js"]
+    },
+    {
+      "name": "UnitEase",
+      "author": "Irtaza",
+      "description": "A lightweight JavaScript library for unit conversions, supporting custom conversions and factors, along with length, weight, temperature, time and aliasing",
+      "repo_link": "https://github.com/Irtaza2009/UnitEase",
+      "package_link": "https://www.npmjs.com/package/unitease",
+      "screenshot": "screenshots/unitease.png",
+      "tags": ["javascript", "conversion"],
+      "hidden_tags": ["js"]
+    },
+    {
+      "name": "vite-plugin-emit-qr",
+      "author": "Mish",
+      "description": "This is a Vite plugin that takes the built index.html file, encodes it as a data: URI, and emits a QR code image file that contains that data. In other words, your whole web app can be encoded as a QR code! This will be especially useful if creating a #saycheese submission :)",
+      "repo_link": "https://github.com/RandomSearch18/vite-plugin-emit-qr",
+      "package_link": "https://www.npmjs.com/package/vite-plugin-emit-qr",
+      "screenshot": "screenshots/vite-plugin-emit-qr.png",
+      "tags": ["typescript"],
+      "hidden_tags": ["ts"]
+    },
+    {
+      "name": "chroma",
+      "author": "Emma",
+      "description": "Simple color picker for the web. Initialize Chroma on a HTML field and let it do it's magic.",
+      "repo_link": "https://github.com/prplwtf/chroma",
+      "package_link": "https://www.npmjs.com/package/chromapicker",
+      "screenshot": "screenshots/chroma.png",
+      "tags": ["javascript"],
+      "hidden_tags": ["js"]
+    },
+    {
+      "name": "Readme Scaffolder",
+      "author": "Hridya Agrawal",
+      "description": "Scaffold your project readme to have a basic readme for your project without having to worry about it later or save time with basic stuff taken care of!",
+      "repo_link": "https://github.com/hridaya423/readmescaffolder",
+      "package_link": "https://www.npmjs.com/package/readme-scaffolder",
+      "screenshot": "screenshots/readme-scaffolder.png",
+      "tags": ["javascript", "cli"],
+      "hidden_tags": ["js"]
     }
   ]
 }
