@@ -65,5 +65,5 @@ function huddle_check() {
 let event_start_time = new Date(Date.UTC(2025, 0, 15, 15, 0, 0, 0));
 let huddles = Array(13).fill(0).map((x, i) => i).map(x => huddle(x));
 
-huddle_check();
-setInterval(huddle_check, 10000);
+// huddle_check();
+// setInterval(huddle_check, 10000);
