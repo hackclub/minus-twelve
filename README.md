@@ -1,6 +1,6 @@
 # Minus Twelve
 
-**[Website](https://minustwelve.hackclub.com)** / **[Submit](https://forms.hackclub.com/t/cqWk12nX7Fus)** / **[Gallery](https://minustwelve.hackclub.com/gallery.html)**
+**[Website](https://minustwelve.hackclub.com)** / **[Gallery](https://minustwelve.hackclub.com/gallery.html)**
 
 <img src="https://github.com/hackclub/minus-twelve/raw/main/assets/12-gon.svg" alt="Minus Twelve logo" width="32" />
 
