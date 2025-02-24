@@ -231,6 +231,16 @@
       "hidden_tags": ["js"]
     },
     {
+      "name": "Markify",
+      "author": "dracula",
+      "description": "Markify is a simple and efficient Node.js tool that converts CSV and JSON files into beautifully formatted Markdown tables. This tool streamlines the process of transforming CSV and JSON data into a clean, readable format that can be easily integrated into documentation, reports, or other Markdown-supported platforms.",
+      "repo_link": "https://github.com/0xDracula/Markify",
+      "package_link": "https://www.npmjs.com/package/markifier",
+      "screenshot": "screenshots/markify.png",
+      "tags": ["javascript", "conversion"],
+      "hidden_tags": ["js"]
+    },
+    {
       "name": "Nest-Mail",
       "author": "Oliver",
       "description": "Nest Mail is an NPM package that allows you to send simple emails through Hack Club's Nest mail server.",
@@ -248,6 +258,16 @@
       "package_link": "https://www.npmjs.com/package/unitease",
       "screenshot": "screenshots/unitease.png",
       "tags": ["javascript", "conversion"],
+      "hidden_tags": ["js"]
+    },
+    {
+      "name": "placehold-imager",
+      "author": "pizzalover125",
+      "description": "placehold-imager returns placeholder images in the desired specifications.",
+      "repo_link": "https://github.com/pizzalover125/placehold-imager",
+      "package_link": "https://www.npmjs.com/package/placehold-imager",
+      "screenshot": "screenshots/placehold-imager.png",
+      "tags": ["javascript"],
       "hidden_tags": ["js"]
     },
     {
@@ -278,6 +298,86 @@
       "package_link": "https://www.npmjs.com/package/readme-scaffolder",
       "screenshot": "screenshots/readme-scaffolder.png",
       "tags": ["javascript", "cli"],
+      "hidden_tags": ["js"]
+    },
+    {
+      "name": "golinkctl",
+      "author": "ajhalili2006",
+      "description": "golinkctl is a TypeScript CLI tool to manage your golinks within your tailnet (<a href=\"https://github.com/tailscale/golink\" target=\"_blank\">https://github.com/tailscale/golink</a>) and compatible APIs if you happen to rewrite it for public Internet consumption.",
+      "repo_link": "https://github.com/recaptime-dev/golinkctl",
+      "package_link": "https://jsr.io/@recaptime-dev/golinkctl",
+      "screenshot": "screenshots/golinkctl.png",
+      "tags": ["typescript", "cli"],
+      "hidden_tags": ["ts"]
+    },
+    {
+      "name": "HTML Compress API",
+      "author": "ShyMike",
+      "description": "This package can be used to compress HTML data and reduce its size. It supports both HTML and dataURI as output. (dataURI can be used to place websites inside of QR codes)",
+      "repo_link": "https://github.com/ImShyMike/HTML-Compress-API",
+      "package_link": "https://www.npmjs.com/package/html-compress-api",
+      "screenshot": "screenshots/html-compress-api.png",
+      "tags": ["javascript"],
+      "hidden_tags": ["js"]
+    },
+    {
+      "name": "colors",
+      "author": "Arvind",
+      "description": "Colors is a tool to generate a color palette from a given color using various different schemes.",
+      "repo_link": "https://github.com/Quantalabs/colors",
+      "package_link": "https://www.npmjs.com/package/@quantalabs/palette_gen",
+      "screenshot": "screenshots/colors.png",
+      "tags": ["javascript"],
+      "hidden_tags": ["js"]
+    },
+    {
+      "name": "easy-time-controls",
+      "author": "crabby605",
+      "description": "Easy time controls helps me get accurate time from cloud flares NTP server, it lets me check the users timezone, convert time to the detected zone, convert time to any other zone, and get the dates, along with sunrise and sunset times!",
+      "repo_link": "https://github.com/crabby605/easy-time-controls",
+      "package_link": "https://www.npmjs.com/package/easy-time-controls",
+      "screenshot": "screenshots/easy-time-controls.png",
+      "tags": ["javascript"],
+      "hidden_tags": ["js"]
+    },
+    {
+      "name": "nztrain-api",
+      "author": "Devarsh",
+      "description": "nztrain-api is a client library for the NZTrain competitive programming/informatics website. With nztrain-api, you can programmatically retrieve data on problems, problem sets, and submissions, as well as submit code to be judged.",
+      "repo_link": "https://github.com/webdev03/nztrain-api",
+      "package_link": "https://npmjs.com/package/nztrain-api",
+      "screenshot": "screenshots/nztrain-api.png",
+      "tags": ["typescript"],
+      "hidden_tags": ["ts"]
+    },
+    {
+      "name": "color-palette-helper",
+      "author": "anne",
+      "description": "Provides a simple interface to generate, manipulate, and visualize color palettes for frontend projects.",
+      "repo_link": "https://github.com/arsoninstigator/minus-twelve",
+      "package_link": "https://www.npmjs.com/package/color-palette-helper",
+      "screenshot": "screenshots/color-palette-helper.png",
+      "tags": ["javascript"],
+      "hidden_tags": ["js"]
+    },
+    {
+      "name": "magics",
+      "author": "gus",
+      "description": "Magics is an AI-powered extension of ls &ndash; at a glance you can get an idea of the more complex purpose of files and directories.",
+      "repo_link": "https://github.com/gusruben/magics",
+      "package_link": "https://www.npmjs.com/package/magics-ls",
+      "screenshot": "screenshots/magics.png",
+      "tags": ["typescript", "cli"],
+      "hidden_tags": ["ts"]
+    },
+    {
+      "name": "HTML Encryptor",
+      "author": "Checkers",
+      "description": "HTML Encryptor is a simple JavaScript tool designed to encrypt the content of HTML files to protect them from being scraped by web crawlers. The tool applies a Caesar cipher to text within specific tags (e.g., h1 and p), making the raw HTML unreadable. However, the encrypted content is dynamically decrypted at runtime in the browser, ensuring it displays normally for users while still being protected from web scrapers.",
+      "repo_link": "https://github.com/YashasSingh/anti-scraper",
+      "package_link": "https://www.npmjs.com/package/anti-scraper",
+      "screenshot": "screenshots/html-encryptor.png",
+      "tags": ["javascript"],
       "hidden_tags": ["js"]
     }
   ]
